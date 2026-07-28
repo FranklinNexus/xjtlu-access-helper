@@ -8,15 +8,20 @@ permissions:
   contents: read
 
 jobs:
-  windows-powershell:
+  windows-powershell-51:
+    name: Windows PowerShell 5.1
     runs-on: windows-latest
-    strategy:
-      matrix:
-        shell:
-          - powershell
-          - pwsh
     steps:
       - uses: actions/checkout@v4
       - name: Run smoke tests
-        shell: ${{ matrix.shell }}
+        shell: powershell
+        run: ./tests/Smoke.Tests.ps1
+
+  powershell-7:
+    name: PowerShell 7
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run smoke tests
+        shell: pwsh
         run: ./tests/Smoke.Tests.ps1
