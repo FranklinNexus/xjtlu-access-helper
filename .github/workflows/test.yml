@@ -1,0 +1,22 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-powershell:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        shell:
+          - powershell
+          - pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run smoke tests
+        shell: ${{ matrix.shell }}
+        run: ./tests/Smoke.Tests.ps1

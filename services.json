@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "services": [
+    {
+      "id": "learning-mall",
+      "name": "Learning Mall Core",
+      "launchUrl": "https://core.xjtlu.edu.cn/local/login/index.php",
+      "probeUrls": [
+        "https://www.learningmall.cn/zh/",
+        "https://core.xjtlu.edu.cn/local/login/index.php",
+        "https://uim.xjtlu.edu.cn/esc-sso/login/page"
+      ],
+      "allowedRedirectHosts": [
+        "www.learningmall.cn",
+        "core.xjtlu.edu.cn",
+        "uim.xjtlu.edu.cn"
+      ]
+    },
+    {
+      "id": "webmail",
+      "name": "XJTLU Webmail",
+      "launchUrl": "https://mail.xjtlu.edu.cn/owa/",
+      "probeUrls": [
+        "https://mail.xjtlu.edu.cn/",
+        "https://mail.xjtlu.edu.cn/owa/",
+        "https://login.microsoftonline.com/"
+      ],
+      "allowedRedirectHosts": [
+        "mail.xjtlu.edu.cn",
+        "login.windows.net",
+        "login.microsoftonline.com",
+        "office.com"
+      ]
+    },
+    {
+      "id": "main-site",
+      "name": "XJTLU Main Website",
+      "launchUrl": "https://www.xjtlu.edu.cn/",
+      "probeUrls": [
+        "https://www.xjtlu.edu.cn/"
+      ],
+      "allowedRedirectHosts": [
+        "www.xjtlu.edu.cn",
+        "xjtlu.edu.cn"
+      ]
+    }
+  ]
+}

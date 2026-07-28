@@ -1,0 +1,68 @@
+name: Access problem or product defect
+description: Report a reproducible problem without sharing credentials or identity tokens.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post usernames, passwords, MFA codes, cookies, QR codes, public IP addresses, or OAuth/SAML parameters. Review diagnostic reports before attaching them.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Affected service
+      options:
+        - Learning Mall Core
+        - XJTLU Webmail
+        - XJTLU main website
+        - Helper application
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: system_mode
+    attributes:
+      label: Isolated System mode result
+      options:
+        - Works
+        - Fails
+        - Not tested
+    validations:
+      required: true
+  - type: dropdown
+    id: direct_mode
+    attributes:
+      label: Isolated Direct mode result
+      options:
+        - Works
+        - Fails
+        - Not tested
+    validations:
+      required: true
+  - type: textarea
+    id: visible_error
+    attributes:
+      label: Visible error and reproduction steps
+      description: Redact account identifiers, tokens, query strings, and private network details.
+      placeholder: Describe what you clicked, what appeared, and whether another network or browser behaves differently.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Diagnostic category
+      description: Copy only the Category value from the generated text report.
+      placeholder: HealthyPreLoginPath
+  - type: textarea
+    id: environment
+    attributes:
+      label: Non-sensitive environment information
+      description: Windows version, browser name/version, and helper version only.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I reviewed this report and removed credentials, identity tokens, and personal information.
+          required: true
