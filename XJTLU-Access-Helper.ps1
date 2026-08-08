@@ -20,7 +20,7 @@ Set-StrictMode -Version 2.0
 $ErrorActionPreference = "Stop"
 
 $script:AppName = "XJTLU Access Helper"
-$script:AppVersion = "0.1.0"
+$script:AppVersion = "0.2.0"
 $script:ConfigPath = Join-Path $PSScriptRoot "services.json"
 $script:AppDataRoot = Join-Path $env:LOCALAPPDATA "XJTLU-Access-Helper"
 $script:ProfileRoot = Join-Path $script:AppDataRoot "Profiles"

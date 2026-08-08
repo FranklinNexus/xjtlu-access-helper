@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "XJTLU Access Helper Auto Open",
+  "version": "0.2.0",
+  "description": "Open supported XJTLU services in the isolated Access Helper browser.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://www.learningmall.cn/*",
+    "https://www.learningmall.cn/*",
+    "http://core.xjtlu.edu.cn/*",
+    "https://core.xjtlu.edu.cn/*",
+    "http://uim.xjtlu.edu.cn/*",
+    "https://uim.xjtlu.edu.cn/*",
+    "http://mail.xjtlu.edu.cn/*",
+    "https://mail.xjtlu.edu.cn/*",
+    "http://www.xjtlu.edu.cn/*",
+    "https://www.xjtlu.edu.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "XJTLU auto-open: ON"
+  }
+}

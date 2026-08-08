@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 - 2026-08-08
+
+- Add optional Edge/Chrome auto-open integration for the supported XJTLU hosts.
+- Register per-service Windows URL protocols under the current user only.
+- Add a one-click extension toggle and an uninstall script for the integration.
+
 ## 0.1.0 - 2026-07-28
 
 - Add isolated Chromium profiles with extensions and sync disabled.

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "routes": [
+    {
+      "service": "learning-mall",
+      "protocol": "xjtlu-access-learning-mall",
+      "hosts": [
+        "www.learningmall.cn",
+        "core.xjtlu.edu.cn",
+        "uim.xjtlu.edu.cn"
+      ]
+    },
+    {
+      "service": "webmail",
+      "protocol": "xjtlu-access-webmail",
+      "hosts": [
+        "mail.xjtlu.edu.cn"
+      ]
+    },
+    {
+      "service": "main-site",
+      "protocol": "xjtlu-access-main-site",
+      "hosts": [
+        "www.xjtlu.edu.cn"
+      ]
+    }
+  ]
+}

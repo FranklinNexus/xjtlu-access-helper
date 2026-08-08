@@ -52,6 +52,13 @@ No administrator privileges or installation are required. The `.cmd` wrapper
 uses a process-only PowerShell execution-policy override; it does not change
 the computer's PowerShell policy.
 
+## Optional automatic handoff
+
+Use the [automatic browser handoff](auto-open/README.zh-CN.md) when you want
+school URLs typed in a normal Edge/Chrome tab to open in the isolated browser
+automatically. It is opt-in, matches only the listed XJTLU hosts, and can be
+paused from the extension toolbar icon.
+
 ## Typical problems it addresses
 
 - The authentication page stays blank or spins forever.
